@@ -20,7 +20,7 @@ class PageTitleView: UIView {
         scrollView.scrollsToTop = false
         scrollView.isPagingEnabled = false
         scrollView.bounces = false
-        scrollView.backgroundColor = UIColor.red
+        scrollView.backgroundColor = UIColor.green
         return scrollView
     }()
     
