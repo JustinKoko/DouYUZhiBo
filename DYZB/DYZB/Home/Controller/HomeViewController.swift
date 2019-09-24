@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
         let frame = CGRect.init(x: 0, y: kStatusBarH + kNavigationBar, width: kScreenW, height: 40)
         let titles = ["推荐", "娱乐", "趣玩", "游戏"]
         let titleView = PageTitleView.init(frame: frame, titles: titles)
-//        titleView.backgroundColor = UIColor.green
+        titleView.backgroundColor = UIColor.green
         return titleView
     }()
     
