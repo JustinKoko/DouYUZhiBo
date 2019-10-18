@@ -20,6 +20,7 @@
 		AC76526221DA4AB800FD626A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC76526121DA4AB800FD626A /* AppDelegate.swift */; };
 		AC76526921DA4AB900FD626A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC76526821DA4AB900FD626A /* Assets.xcassets */; };
 		AC76526C21DA4AB900FD626A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC76526A21DA4AB900FD626A /* LaunchScreen.storyboard */; };
+		ACCBEEF62359BC31000EE5A2 /* TitlteChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBEEF52359BC31000EE5A2 /* TitlteChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +34,12 @@
 		AC15CBB1221588EC00E3643F /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		AC15CBB32215939900E3643F /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		AC15CBB72215987400E3643F /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		AC76525E21DA4AB800FD626A /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC76525E21DA4AB800FD626A /* 练习项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "练习项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC76526121DA4AB800FD626A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC76526821DA4AB900FD626A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC76526B21DA4AB900FD626A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC76526D21DA4AB900FD626A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCBEEF52359BC31000EE5A2 /* TitlteChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlteChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				AC15CBA0221582DF00E3643F /* Home.storyboard */,
 				AC15CBAE2215834600E3643F /* HomeViewController.swift */,
+				ACCBEEF52359BC31000EE5A2 /* TitlteChildViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,7 +186,7 @@
 		AC76525F21DA4AB800FD626A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC76525E21DA4AB800FD626A /* DYZB.app */,
+				AC76525E21DA4AB800FD626A /* 练习项目.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,7 +284,7 @@
 			);
 			name = DYZB;
 			productName = DYZB;
-			productReference = AC76525E21DA4AB800FD626A /* DYZB.app */;
+			productReference = AC76525E21DA4AB800FD626A /* 练习项目.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -343,6 +346,7 @@
 				AC15CB982215826800E3643F /* MainViewController.swift in Sources */,
 				AC15CBB42215939900E3643F /* PageTitleView.swift in Sources */,
 				AC15CBB2221588EC00E3643F /* UIBarButtonItem-Extension.swift in Sources */,
+				ACCBEEF62359BC31000EE5A2 /* TitlteChildViewController.swift in Sources */,
 				AC15CBB82215987400E3643F /* Common.swift in Sources */,
 				AC15CBAF2215834600E3643F /* HomeViewController.swift in Sources */,
 			);
@@ -491,7 +495,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.DYZB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "练习项目";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -510,7 +514,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.DYZB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "练习项目";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

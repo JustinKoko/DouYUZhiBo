@@ -20,6 +20,7 @@ class PageTitleView: UIView {
         scrollView.scrollsToTop = false
         scrollView.isPagingEnabled = false
         scrollView.bounces = false
+        scrollView.isScrollEnabled = true
         scrollView.backgroundColor = UIColor.green
         return scrollView
     }()
@@ -49,7 +50,7 @@ extension PageTitleView {
     
     private func setupTitlesLabels () {
         
-        let labelW : CGFloat = frame.width / CGFloat(titles.count)
+        let labelW : CGFloat = frame.width / CGFloat(5)
         let labelH : CGFloat = frame.height - kScrollLineH
         let labelY : CGFloat = 0
         
@@ -63,7 +64,7 @@ extension PageTitleView {
             let labelX : CGFloat = labelW * CGFloat(index)
             label.frame = CGRect.init(x: labelX, y: labelY, width: labelW, height: labelH)
             titleScrollView.addSubview(label)
-            
+            titleScrollView.contentSize = CGSize.init(width: frame.width / CGFloat(5) * (CGFloat)(self.titles.count), height: labelH)
         }
     }
     

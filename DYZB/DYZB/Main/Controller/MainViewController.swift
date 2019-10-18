@@ -13,6 +13,7 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpNavigationBar()
         addChildVC(storyName: "Home")
         addChildVC(storyName: "Live")
         addChildVC(storyName: "Follow")
@@ -25,4 +26,10 @@ class MainViewController: UITabBarController {
         addChild(childVC)
     }
 
+    private func setUpNavigationBar() {
+        let navigationBar = UINavigationBar.appearance()
+        navigationBar.tintColor = .white
+        navigationBar.barTintColor = .orange
+        navigationBar.titleTextAttributes =  [NSAttributedString.Key.font: UIFont.init(name: "PingFang-SC", size: 15)]
+    }
 }
