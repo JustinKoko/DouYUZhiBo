@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 let kStatusBarH : CGFloat = 44
 
 let kNavigationBar : CGFloat = 44

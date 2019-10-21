@@ -72,11 +72,22 @@ extension HomeViewController {
         let btn = UIButton()
         btn.setImage(UIImage.init(named: "homeLogoIcon"), for: .normal)
         btn.sizeToFit()
+        btn.addTarget(self, action: #selector(jumpLoginAction), for: .touchUpInside)
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: btn)
+        
+        
         let size = CGSize.init(width: 40, height: 40)
         let searchItem = UIBarButtonItem(imageName: "home_newSeacrhcon", highImageName: "home_newSeacrhcon", size: size)
         let qrcodeItem = UIBarButtonItem(imageName: "home_newSaoicon", highImageName: "home_newSaoicon", size: size)
         navigationItem.rightBarButtonItems = [searchItem, qrcodeItem]
         
     }
+    
+    @objc private func jumpLoginAction() {
+        let loginVC: LoginVC = LoginVC.init()
+        let navigationLoginVC = UINavigationController.init(rootViewController: loginVC)
+        navigationLoginVC.modalPresentationStyle = .fullScreen
+        self.present(navigationLoginVC, animated: true, completion: nil)
+    }
+    
 }
