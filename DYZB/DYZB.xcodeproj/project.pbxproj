@@ -18,6 +18,10 @@
 		AC15CBB2221588EC00E3643F /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15CBB1221588EC00E3643F /* UIBarButtonItem-Extension.swift */; };
 		AC15CBB42215939900E3643F /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15CBB32215939900E3643F /* PageTitleView.swift */; };
 		AC15CBB82215987400E3643F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15CBB72215987400E3643F /* Common.swift */; };
+		AC44D2BC237E4EF4003E7159 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44D2BB237E4EF4003E7159 /* PersonModel.swift */; };
+		AC44D2BE237E7EA3003E7159 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44D2BD237E7EA3003E7159 /* FollowVC.swift */; };
+		AC44D2C0237E7EB3003E7159 /* LiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44D2BF237E7EB3003E7159 /* LiveVC.swift */; };
+		AC44D2C2237E7ECB003E7159 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44D2C1237E7ECB003E7159 /* ProfileVC.swift */; };
 		AC76526221DA4AB800FD626A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC76526121DA4AB800FD626A /* AppDelegate.swift */; };
 		AC76526921DA4AB900FD626A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC76526821DA4AB900FD626A /* Assets.xcassets */; };
 		AC76526C21DA4AB900FD626A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC76526A21DA4AB900FD626A /* LaunchScreen.storyboard */; };
@@ -38,7 +42,11 @@
 		AC15CBB1221588EC00E3643F /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		AC15CBB32215939900E3643F /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		AC15CBB72215987400E3643F /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		AC76525E21DA4AB800FD626A /* 练习项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "练习项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC44D2BB237E4EF4003E7159 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		AC44D2BD237E7EA3003E7159 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		AC44D2BF237E7EB3003E7159 /* LiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVC.swift; sourceTree = "<group>"; };
+		AC44D2C1237E7ECB003E7159 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		AC76525E21DA4AB800FD626A /* 斗鱼TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "斗鱼TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC76526121DA4AB800FD626A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC76526821DA4AB900FD626A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC76526B21DA4AB900FD626A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				AC15CB9B221582CD00E3643F /* Follow.storyboard */,
+				AC44D2BD237E7EA3003E7159 /* FollowVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				AC15CBA6221582E900E3643F /* Live.storyboard */,
+				AC44D2BF237E7EB3003E7159 /* LiveVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				AC15CBAA221582F400E3643F /* Profile.storyboard */,
+				AC44D2C1237E7ECB003E7159 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +212,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		AC44D2BA237E4EE4003E7159 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC44D2BB237E4EF4003E7159 /* PersonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AC76525521DA4AB800FD626A = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +233,7 @@
 		AC76525F21DA4AB800FD626A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC76525E21DA4AB800FD626A /* 练习项目.app */,
+				AC76525E21DA4AB800FD626A /* 斗鱼TV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,9 +259,8 @@
 		ACA3E32C235D887600EF9EC1 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				AC44D2BA237E4EE4003E7159 /* Model */,
 				ACA3E32D235D887600EF9EC1 /* Controller */,
-				ACA3E32E235D887600EF9EC1 /* Model */,
-				ACA3E32F235D887600EF9EC1 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -254,20 +272,6 @@
 				ACA3E331235D888F00EF9EC1 /* LoginVC.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		ACA3E32E235D887600EF9EC1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		ACA3E32F235D887600EF9EC1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		ACD4154921E08256009F0155 /* Follow */ = {
@@ -347,7 +351,7 @@
 			);
 			name = DYZB;
 			productName = DYZB;
-			productReference = AC76525E21DA4AB800FD626A /* 练习项目.app */;
+			productReference = AC76525E21DA4AB800FD626A /* 斗鱼TV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -431,12 +435,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC44D2C2237E7ECB003E7159 /* ProfileVC.swift in Sources */,
+				AC44D2C0237E7EB3003E7159 /* LiveVC.swift in Sources */,
 				AC76526221DA4AB800FD626A /* AppDelegate.swift in Sources */,
 				AC15CB982215826800E3643F /* MainViewController.swift in Sources */,
 				ACA3E332235D888F00EF9EC1 /* LoginVC.swift in Sources */,
 				AC15CBB42215939900E3643F /* PageTitleView.swift in Sources */,
 				AC15CBB2221588EC00E3643F /* UIBarButtonItem-Extension.swift in Sources */,
 				ACCBEEF62359BC31000EE5A2 /* TitlteChildViewController.swift in Sources */,
+				AC44D2BC237E4EF4003E7159 /* PersonModel.swift in Sources */,
+				AC44D2BE237E7EA3003E7159 /* FollowVC.swift in Sources */,
 				AC15CBB82215987400E3643F /* Common.swift in Sources */,
 				AC15CBAF2215834600E3643F /* HomeViewController.swift in Sources */,
 			);
@@ -586,7 +594,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.DYZB;
-				PRODUCT_NAME = "练习项目";
+				PRODUCT_NAME = "斗鱼TV";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -606,7 +614,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.DYZB;
-				PRODUCT_NAME = "练习项目";
+				PRODUCT_NAME = "斗鱼TV";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -52,10 +52,9 @@ class HomeViewController: UIViewController {
     }
     
     func randomRGB() -> UIColor {
+        return UIColor.init(red: CGFloat(arc4random()%256)/255.0, green: CGFloat(arc4random()%256)/255.0, blue: CGFloat(arc4random()%256)/255.0, alpha: 1)
 
-            return UIColor.init(red: CGFloat(arc4random()%256)/255.0, green: CGFloat(arc4random()%256)/255.0, blue: CGFloat(arc4random()%256)/255.0, alpha: 1)
-
-        }
+    }
 }
 
 // 设置 UI 界面

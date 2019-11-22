@@ -9,6 +9,9 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Alamofire
+import SwiftyJSON
+
 
 class LoginVC: UIViewController {
 
@@ -23,6 +26,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "home_mobilegameSuspendedView_dismiss_unpressed"), style: .plain, target: self, action: #selector(backAction))
       self.accountTextField.rx.text.orEmpty.subscribe(onNext: { (account) in
             if self.passwordTextField.text!.count > 0 {
                 self.loginBtn.isEnabled = true
@@ -49,7 +53,56 @@ class LoginVC: UIViewController {
 
     }
 
-    @IBAction func loginAction(_ sender: Any) {
-        print("\(self.accountLabel.text) + \(self.passwordLabel.text)")
+    
+    @objc func backAction() {
+        self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func loginAction(_ sender: Any) {
+        
+        let urlStr = "http://rap2api.taobao.org/app/mock/236311/appLogin"
+        let parameters:Parameters = ["account": self.accountTextField.text!, "password": self.passwordTextField.text!]
+        
+        
+        
+        Alamofire.request(urlStr, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        .downloadProgress(queue: DispatchQueue.global(qos: .utility)) { progress in
+            
+        }
+        .validate { request, response, data in
+            
+            return .success
+        }
+        .responseJSON { response in
+           switch response.result{
+            
+           case .success:
+            
+            if let json = response.result.value {
+                
+                
+                debugPrint(JSON(json)["status"])
+                
+                if JSON(json)["status"] == 200 {
+//                    NotificationCenter.default.rx.notification(Notification.Name(rawValue: "loginActionSuccess"), object: nil)
+                    
+                    self.backAction()
+                    
+                    
+                }
+            }
+                
+           case .failure(let error):
+               print(error)
+           }
+        }
+                
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.accountTextField.resignFirstResponder()
+        self.passwordTextField.resignFirstResponder()
+    }
+    
 }

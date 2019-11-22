@@ -30,6 +30,7 @@ class MainViewController: UITabBarController {
         let navigationBar = UINavigationBar.appearance()
         navigationBar.tintColor = .white
         navigationBar.barTintColor = .orange
-        navigationBar.titleTextAttributes =  [NSAttributedString.Key.font: UIFont.init(name: "PingFang-SC", size: 15)]
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)]
+
     }
 }
