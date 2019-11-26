@@ -62,41 +62,11 @@ class LoginVC: UIViewController {
         
         let urlStr = "http://rap2api.taobao.org/app/mock/236311/appLogin"
         let parameters:Parameters = ["account": self.accountTextField.text!, "password": self.passwordTextField.text!]
-        
-        
-        
-        Alamofire.request(urlStr, method: .post, parameters: parameters, encoding: JSONEncoding.default)
-        .downloadProgress(queue: DispatchQueue.global(qos: .utility)) { progress in
+        NetWorkTool.requestData(type: .POST, urlString: urlStr) { (result) in
+            
+            print(result)
             
         }
-        .validate { request, response, data in
-            
-            return .success
-        }
-        .responseJSON { response in
-           switch response.result{
-            
-           case .success:
-            
-            if let json = response.result.value {
-                
-                
-                debugPrint(JSON(json)["status"])
-                
-                if JSON(json)["status"] == 200 {
-//                    NotificationCenter.default.rx.notification(Notification.Name(rawValue: "loginActionSuccess"), object: nil)
-                    
-                    self.backAction()
-                    
-                    
-                }
-            }
-                
-           case .failure(let error):
-               print(error)
-           }
-        }
-                
         
     }
     

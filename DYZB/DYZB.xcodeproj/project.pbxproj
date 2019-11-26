@@ -22,6 +22,7 @@
 		AC44D2BE237E7EA3003E7159 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44D2BD237E7EA3003E7159 /* FollowVC.swift */; };
 		AC44D2C0237E7EB3003E7159 /* LiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44D2BF237E7EB3003E7159 /* LiveVC.swift */; };
 		AC44D2C2237E7ECB003E7159 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44D2C1237E7ECB003E7159 /* ProfileVC.swift */; };
+		AC5C531723862D2300EC77F1 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5C531623862D2300EC77F1 /* NetWorkTool.swift */; };
 		AC76526221DA4AB800FD626A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC76526121DA4AB800FD626A /* AppDelegate.swift */; };
 		AC76526921DA4AB900FD626A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC76526821DA4AB900FD626A /* Assets.xcassets */; };
 		AC76526C21DA4AB900FD626A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC76526A21DA4AB900FD626A /* LaunchScreen.storyboard */; };
@@ -46,6 +47,7 @@
 		AC44D2BD237E7EA3003E7159 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		AC44D2BF237E7EB3003E7159 /* LiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVC.swift; sourceTree = "<group>"; };
 		AC44D2C1237E7ECB003E7159 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		AC5C531623862D2300EC77F1 /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
 		AC76525E21DA4AB800FD626A /* 斗鱼TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "斗鱼TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC76526121DA4AB800FD626A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC76526821DA4AB900FD626A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			children = (
 				AC15CBB02215888C00E3643F /* Extension */,
 				AC15CBB72215987400E3643F /* Common.swift */,
+				AC5C531623862D2300EC77F1 /* NetWorkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				AC44D2BE237E7EA3003E7159 /* FollowVC.swift in Sources */,
 				AC15CBB82215987400E3643F /* Common.swift in Sources */,
 				AC15CBAF2215834600E3643F /* HomeViewController.swift in Sources */,
+				AC5C531723862D2300EC77F1 /* NetWorkTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
