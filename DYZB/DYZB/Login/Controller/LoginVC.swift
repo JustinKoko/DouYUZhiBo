@@ -10,7 +10,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Alamofire
-import SwiftyJSON
 
 
 class LoginVC: UIViewController {
@@ -62,10 +61,9 @@ class LoginVC: UIViewController {
         
         let urlStr = "http://rap2api.taobao.org/app/mock/236311/appLogin"
         let parameters:Parameters = ["account": self.accountTextField.text!, "password": self.passwordTextField.text!]
-        NetWorkTool.requestData(type: .POST, urlString: urlStr) { (result) in
-            
-            print(result)
-            
+        
+        NetWorkTool.requestData(type: .POST, urlString: urlStr, parameters: parameters as! [String : String], header: nil) { (response) in
+            print(response);
         }
         
     }

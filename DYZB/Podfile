@@ -6,6 +6,6 @@ target 'DYZB' do
  pod 'RxSwift'
  pod 'RxCocoa'
  pod 'Alamofire'
- pod 'SwiftyJSON'
+ pod 'HandyJSON'
 
 end

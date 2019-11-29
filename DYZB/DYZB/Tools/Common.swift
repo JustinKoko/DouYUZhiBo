@@ -11,10 +11,15 @@ import UIKit
 
 let kStatusBarH : CGFloat = 44
 
-let kNavigationBar : CGFloat = 44
+let kNavigationBarH : CGFloat = 44
+
+let kTableBarH : CGFloat = 49
+
 
 let kScreenW = UIScreen.main.bounds.size.width
 
 let kScreenH = UIScreen.main.bounds.size.height
+
+let liveUrl = "http://live.9158.com/Room/GetNewRoomOnline"
 
 

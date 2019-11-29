@@ -28,6 +28,11 @@
 		AC76526C21DA4AB900FD626A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC76526A21DA4AB900FD626A /* LaunchScreen.storyboard */; };
 		ACA3E332235D888F00EF9EC1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3E330235D888F00EF9EC1 /* LoginVC.swift */; };
 		ACA3E333235D888F00EF9EC1 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA3E331235D888F00EF9EC1 /* LoginVC.xib */; };
+		ACA722CD238D09230047706B /* PlayCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA722CC238D09230047706B /* PlayCollectionView.swift */; };
+		ACA722D0238D09E60047706B /* PlayCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA722CE238D09E60047706B /* PlayCollectionCell.swift */; };
+		ACA722D1238D09E60047706B /* PlayCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA722CF238D09E60047706B /* PlayCollectionCell.xib */; };
+		ACA722D3238D1C670047706B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA722D2238D1C670047706B /* UIColor+Extension.swift */; };
+		ACA722D5238D26040047706B /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA722D4238D26040047706B /* LiveModel.swift */; };
 		ACCBEEF62359BC31000EE5A2 /* TitlteChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBEEF52359BC31000EE5A2 /* TitlteChildViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +60,11 @@
 		AC76526D21DA4AB900FD626A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA3E330235D888F00EF9EC1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		ACA3E331235D888F00EF9EC1 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		ACA722CC238D09230047706B /* PlayCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCollectionView.swift; sourceTree = "<group>"; };
+		ACA722CE238D09E60047706B /* PlayCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCollectionCell.swift; sourceTree = "<group>"; };
+		ACA722CF238D09E60047706B /* PlayCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayCollectionCell.xib; sourceTree = "<group>"; };
+		ACA722D2238D1C670047706B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		ACA722D4238D26040047706B /* LiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
 		ACCBEEF52359BC31000EE5A2 /* TitlteChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlteChildViewController.swift; sourceTree = "<group>"; };
 		D97B541B9DF21704C9A8DCE3 /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
 		E24FBCF1069D0A1348C47872 /* libPods-DYZB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYZB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,20 +156,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		AC15CBA1221582DF00E3643F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		AC15CBA2221582DF00E3643F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		AC15CBA4221582E900E3643F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				AC15CBB1221588EC00E3643F /* UIBarButtonItem-Extension.swift */,
+				ACA722D2238D1C670047706B /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -276,6 +273,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		ACA722CA238D090F0047706B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACA722D4238D26040047706B /* LiveModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACA722CB238D090F0047706B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACA722CC238D09230047706B /* PlayCollectionView.swift */,
+				ACA722CE238D09E60047706B /* PlayCollectionCell.swift */,
+				ACA722CF238D09E60047706B /* PlayCollectionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ACD4154921E08256009F0155 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,8 +335,8 @@
 			isa = PBXGroup;
 			children = (
 				AC15CB9F221582DF00E3643F /* Controller */,
-				AC15CBA1221582DF00E3643F /* Model */,
-				AC15CBA2221582DF00E3643F /* View */,
+				ACA722CA238D090F0047706B /* Model */,
+				ACA722CB238D090F0047706B /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -399,6 +414,7 @@
 				AC15CBA3221582E000E3643F /* Home.storyboard in Resources */,
 				AC15CBA8221582E900E3643F /* Live.storyboard in Resources */,
 				AC76526C21DA4AB900FD626A /* LaunchScreen.storyboard in Resources */,
+				ACA722D1238D09E60047706B /* PlayCollectionCell.xib in Resources */,
 				AC76526921DA4AB900FD626A /* Assets.xcassets in Resources */,
 				AC15CBAD221582F400E3643F /* Profile.storyboard in Resources */,
 				ACA3E333235D888F00EF9EC1 /* LoginVC.xib in Resources */,
@@ -438,14 +454,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA722CD238D09230047706B /* PlayCollectionView.swift in Sources */,
 				AC44D2C2237E7ECB003E7159 /* ProfileVC.swift in Sources */,
 				AC44D2C0237E7EB3003E7159 /* LiveVC.swift in Sources */,
 				AC76526221DA4AB800FD626A /* AppDelegate.swift in Sources */,
 				AC15CB982215826800E3643F /* MainViewController.swift in Sources */,
 				ACA3E332235D888F00EF9EC1 /* LoginVC.swift in Sources */,
+				ACA722D0238D09E60047706B /* PlayCollectionCell.swift in Sources */,
+				ACA722D3238D1C670047706B /* UIColor+Extension.swift in Sources */,
 				AC15CBB42215939900E3643F /* PageTitleView.swift in Sources */,
 				AC15CBB2221588EC00E3643F /* UIBarButtonItem-Extension.swift in Sources */,
 				ACCBEEF62359BC31000EE5A2 /* TitlteChildViewController.swift in Sources */,
+				ACA722D5238D26040047706B /* LiveModel.swift in Sources */,
 				AC44D2BC237E4EF4003E7159 /* PersonModel.swift in Sources */,
 				AC44D2BE237E7EA3003E7159 /* FollowVC.swift in Sources */,
 				AC15CBB82215987400E3643F /* Common.swift in Sources */,

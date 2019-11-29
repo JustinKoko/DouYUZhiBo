@@ -21,7 +21,6 @@ class PageTitleView: UIView {
         scrollView.isPagingEnabled = false
         scrollView.bounces = false
         scrollView.isScrollEnabled = true
-        scrollView.backgroundColor = UIColor.green
         return scrollView
     }()
     
@@ -43,7 +42,7 @@ extension PageTitleView {
     private func setupUI() {
         // 添加 scrollview
         self.addSubview(titleScrollView)
-        titleScrollView.frame = bounds
+        titleScrollView.frame = CGRect.init(x: 0, y: 0, width: kScreenW, height: 40.5)
         // 添加 label
         setupTitlesLabels()
     }    
