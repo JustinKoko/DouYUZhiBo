@@ -17,7 +17,7 @@ enum MethodType {
 
 class NetWorkTool {
 
-    class func requestData(type:MethodType, urlString:String, parameters:[String:String]? = nil, header:[String:String]? = nil, _ finishCallBack: @escaping ((_ result: NSDictionary)->())) {
+    class func requestData(type:MethodType, urlString:String, parameters:[String:String]? = nil, header:[String:String]? = nil, _ finishCallBack: @escaping ((_ result: Any)->())) {
         
             let method = type == MethodType.GET ? HTTPMethod.get :HTTPMethod.post
         
@@ -26,8 +26,7 @@ class NetWorkTool {
                 print(response.result.error)
                 return
             }
-            
-            finishCallBack(result as! NSDictionary)
+            finishCallBack(result)
         }
                 
     }

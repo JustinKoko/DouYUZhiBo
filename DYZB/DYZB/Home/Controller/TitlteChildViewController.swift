@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import HandyJSON
 
 class TitlteChildViewController: UIViewController {
     
     var page : Int = 0
+    
+   fileprivate lazy var dataSource: [LiveModel] = [LiveModel]()
     
     lazy var collectionView: PlayCollectionView = {
         
@@ -38,18 +41,15 @@ class TitlteChildViewController: UIViewController {
     
     func sendRequest() {
         NetWorkTool.requestData(type: .GET, urlString: "\(liveUrl)?page=\(String(self.page))", parameters: nil, header: nil) { (response) in
-            guard let data = response["data"] else {
-                print("data数据为空")
-                return
-            }
-            let dataDic = data as! NSDictionary
-            guard let list = dataDic["list"] else {
-                print("list数据为空")
-                return
-            }
-            let listArr = list as! NSArray
-            print(listArr)
             
+            guard let result = response as? [String : Any] else {return}
+            guard let data = result["data"] as? [String : Any] else {return}
+            guard let list = data["list"] as? [[String : Any]] else {return}
+            for dict in list {
+                self.dataSource.append(LiveModel.init(dict: dict))
+            }
+            self.collectionView.setCollectionView(dataArr: self.dataSource)
+            print(self.dataSource)
         }
     }
     

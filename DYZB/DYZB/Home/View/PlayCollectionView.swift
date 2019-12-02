@@ -10,12 +10,20 @@ import UIKit
 
 class PlayCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource{
     
+    fileprivate lazy var dataArr:[LiveModel] = [LiveModel]()
+    
+    func setCollectionView(dataArr : [LiveModel]) {
+        self.dataArr = dataArr
+        self.reloadData()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10;
+        return self.dataArr.count;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayCollectionCell", for: indexPath)
+        let cell : PlayCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayCollectionCell", for: indexPath) as! PlayCollectionCell
+        cell.fillPlayCollectionCell(model: self.dataArr[indexPath.row])
         return cell;
         
     }

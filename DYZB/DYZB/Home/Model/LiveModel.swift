@@ -9,7 +9,7 @@
 import UIKit
 import HandyJSON
 
-class LiveModel: HandyJSON {
+class LiveModel: NSObject {
     
     
 //    allnum = 531;
@@ -29,11 +29,37 @@ class LiveModel: HandyJSON {
 //    starlevel = 2;
 //    useridx = 64288280;
     
-    var nickname : String?
-    var photo : String?
-    var flv : String?
-    required init() {
-        
+    var isOnline : Int = 0
+    var nickname : String = ""
+    var photo : String = ""
+    var flv : String = ""
+    
+    init(dict : [String : Any]) {
+        super.init()
+        setValuesForKeys(dict)
+        isOnline = dict["isOnline"] as! Int;
+        nickname = dict["nickname"] as! String;
+        photo = dict["photo"] as! String;
+        flv = dict["flv"] as! String;
     }
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
+    
+//    static func deserialize(from dict: [String : Any]?, designatedPath: String? = nil) -> LiveModel? {
+//        let model = LiveModel()
+//        model.nickname = dict?["nickname"] as! String
+//        model.photo = dict?["photo"] as! String
+//        model.flv = dict?["flv"] as! String
+//        return model
+//    }
+//    class func jsonToModel(dic: AnyObject) -> LiveModel {
+//        var model = LiveModel()
+//        model.nickname = dic["nickname"] as! String
+//        model.photo = dic["photo"] as! String
+//        model.flv = dic["flv"] as! String
+//        return model
+//    }
+    
     
 }
+
+
